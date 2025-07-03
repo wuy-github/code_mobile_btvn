@@ -102,7 +102,6 @@ fun AppNavigation() {
                 onBackClick = {
                     // Đăng xuất người dùng khi nhấn nút Back trên màn hình Profile
                     auth.signOut()
-                    // Quan trọng: Thêm GoogleSignIn.getClient(context, gso).signOut() để đăng xuất khỏi tài khoản Google
                     // Đây là bước bổ sung để cho phép đăng nhập tài khoản Google khác dễ dàng hơn.
                     val context = navController.context as Activity // Lấy context từ NavController
                     val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
