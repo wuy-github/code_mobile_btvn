@@ -1,4 +1,4 @@
-package com.example.tuan_6_task_1.ui.viewmodel // Tên package mới
+package com.example.tuan_6_task_1.ui.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -20,7 +20,7 @@ class TaskViewModel : ViewModel() {
     var errorMessage by mutableStateOf<String?>(null)
         private set
 
-    // THAY ĐỔI QUAN TRỌNG: Gọi apiService một cách gọn gàng
+    // Gọi apiService một cách gọn gàng
     private val apiService: TaskApiService = RetrofitInstance.api
 
     fun getTasks() {
